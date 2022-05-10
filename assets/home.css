@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*.header-container{
+    background-color:lightgrey;
+    width: 800px;
+    height: 700px;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+#profileImage{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    top :20px;
+  
+}
+#mydot-el{
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 195px;
+}*/
+#heading-el{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+#heading2-el{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-weight: bolder;
+    font-size: medium;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+#mydot1-el{
+    width: 5px;
+    height: 5px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    left: 198px;
+    top: 20px;
+}
+
+#content-el{
+    width: 1000px;
+    height: 664px;
+ 
+    top: 150px;
+    position: absolute;
+    z-index: 2;
+    left: 80px;
+    border-radius: 20px;
+    background-color: white;
+}
+/*#contentBackground-el{
+    width: 500px;
+    height: 600px;
+    background-color: orange;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    border-top-left-radius: 20px;
+    z-index: 1;
+}*/
+#sarah-el{
+    width: 60px;
+    height: 60px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    padding-top: 10px;
+    
+}
+#picture-el{
+    
+    background-image: linear-gradient(to right, rgba(246, 245, 243, 0), rgba(196, 183, 151, 0.986));
+    width: 130px;
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+#search-el{
+    position: absolute;
+    top: 10px;
+    left :290px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 25px;
+}
+#searchicon-el{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left :450px;
+}
+#release-el,#featur-el,#search-el
+   {
+        float: right;
+        margin-right: 5%;
+        margin-top: 1%;
+    }

@@ -19,6 +19,16 @@ body{
     
 }
 
+#profileImage{
+    width: 200px;
+    height: 100px;
+    margin-top: 0px;
+    center: opx;  
+    float :top;
+}
+
+
+
 .container{
     position: relative;
     max-width: 430px;
@@ -33,7 +43,7 @@ body{
 .container .forms{
     display: flex;
     align-items: center;
-    height: 440px;
+    height: 600px;
     width: 200%;
     transition: height 0.2s ease;
 }
@@ -62,7 +72,7 @@ body{
 }
 
 .container.active .forms{
-    height: 600px;
+    height: 900px;
 }
 .container .form .title{
     position: relative;
