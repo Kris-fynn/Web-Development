@@ -6,15 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- ===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./index.css">
-  
-         
-    <!--<title>Login & Registration Form</title>-->
+    
+    <!--<title>Login Form</title>-->
 </head>
 <body>
     
@@ -26,15 +23,15 @@
 
                 <form action="./assets/home.html">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text" id="umail" placeholder="Enter your email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <input type="password" id="pass1" placeholder="Enter your password" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
-
+        
                     <div class="checkbox-text">
                         <div class="checkbox-content">
                             <input type="checkbox" id="logCheck">
@@ -43,84 +40,23 @@
                         
                         <a href="./frgpwd.html" class="text">Forgot password?</a>
                     </div>
-
+                    Not a member?<a href="reg.html">Signup now</a>
                     <div class="input-field button">
-                        <button class="btn">Log in</button>
+                        <button class="btn" onclick="loginn()">Log in</button>
                     </div>
                 </form>
 
                 <div class="login-signup">
                     <span class="text">Not a member?
-                        <a href="#" class="text signup-link">Signup now</a>
+                        <a href="./reg.html" class="text signup-link">Signup now</a>
                     </span>
                 </div>
             </div>
-
-            <!-- Registration Form -->
-            <div class="form signup">
-                <span><img src="https://th.bing.com/th/id/OIP.q1VWSjaOO7pkiBAM1Cdk6AHaEK?pid=ImgDet&rs=1" alt="amazon logo not available" id="profileImage"></span><br>
-                <span class="title">Registration</span>
-
-                <form action="./assets/home.html">
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your Name" required>
-                        <i class="uil uil-user"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your Surname" required>
-                        <i class="uil uil-user"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your Email" size="50" onblur="ValidateEmail()" required>
-                        <i class="uil uil-envelope icon"></i>
-                        
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your Phone Number" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <div class="form-control">
-                        <label class="header">Profile Photo:</label>
-                        
-                        <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required>
-                        <i class="uil uil-lock icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="sigCheck">
-                            <label for="sigCheck" class="text">Remember me</label>
-                        </div>
-                        
-                        <a href="./frgpwd.html" class="text">Forgot password?</a>
-                    </div>
-
-                    <div class="input-field button">
-                        <button class="btn">Log in</button>
-                    </div>
-                    
-                </form>
-
-                <div class="login-signup">
-                    <span class="text">Not a member?
-                        <a href="#" class="text login-link">Signup now</a>
-                    </span>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!--<script src="script.js"></script>-->
     <script src="index.js"></script>
-    <script>option.js</script>
+    <script src="reg.js"></script>
    
 
 </body>

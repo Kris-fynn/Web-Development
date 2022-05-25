@@ -52,7 +52,7 @@ function onSignup() {
     
     if (this.readyState == 4 && this.status == 200) {
       enableSubmitButton();
-      window.location.href = "./index.index.html";
+      window.location.href = "./index.html";
     }
     else {
       console.log('AJAX call failed!');
