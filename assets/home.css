@@ -1,9 +1,697 @@
-*{
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.mainContainer{
+    width:100%;
+    height: 100%;
+    background-color:red;
+    
+
+
+}
+.leftSideBar{
+    height: 100%;
+    width: 25%;
+    background-color: bisque;
+
+}
+.boxShadow{
+
+    height: 245px;
+    width: 174px;
+    background-image: linear-gradient(to right, rgba(246, 245, 243, 0), rgba(196, 183, 151, 0.986));
+    position: absolute;
+    top: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+#profilePicture{
+    width: 60px;
+    height: 60px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    padding-top: 10px;
+    center: 0px;
+    /*height: 85px;
+    width: 78px;
+    background-color: rgb(8, 24, 14);
+    center: 0%;*/
+}
+
+.leftSideBarIcons{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:30.3rem;
+
+}
+
+.leftSideBarIcons img{
+    width:24px;
+
+}
+
+
+.bottomLeftAmazonPicture{
+    height: 100px;
+    width: 174px;
+    background-color: rgb(209, 196, 255);
+      top:39rem;
+      position: relative;
+}
+
+.rightSidebarMain{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    margin-bottom: -0.001rem;
+    left:13rem;
+}
+#topRightNavBar{
+background-color: darkorange;
+/*height: 90px;*/
+/* border: thin solid red; */
+height: 3.5em;
+width: 100%;
+}
+#searchBar{
+    height: 50%;
+    width: 50%;
+    float: right;
+    right:46%;
+    position: relative;
+
+}
+#Search {
+    width: 60%;
+    height: 100%;
+    float: right;
+    /* border: thin solid black; */
+}
+#Search input {
+    border-radius: 1.25em;
+    width: 100%;
+    height: 70%;
+    float: right;
+}
+#Search button {
+    border-radius: 3em;
+    width: 1.25em;
+    height: 1.25em;
+    background: url("https://cdn-icons-png.flaticon.com/512/49/49116.png");
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border: none;
+    position: relative;
+    left: 91%;
+    bottom: 75%;
+}
+#Search li {
+    float: right;
+    /* padding-left: 10px;
+        padding-right: 10px; */
+    height: 100%;
+    padding: 5px 10px 5px 10px;
+    /* border: thin solid black; */
+    font-weight: bold;
+    font-size: small;
+}
+#Search li:hover {
+    float: right;
+    height: 100%;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(122, 106, 106);
+    border-radius: 0.625em;
+}
+
+.magnifiyingGlassIcon{
+
+}
+.newRelease{
+    
+
+}
+.bookRecord{
+
+}
+.i4dotManuIcon{
+
+}
+.booksYouReadlast{
+    height: 160px;
+    width: 100%;
+    background-color: blue
+    position: relative;
+}
+.booksScroller{
+
+}
+.scrollRecentbooks{
+    
+}
+.newRelease{
+    width: 69.2%;
+    background-color: grey;
+    margin-top: 112px;
+    height: 450px;
+    position: relative;
+    top: 11rem
+}
+
+
+
+    /*******************New Release****************************/
+
+    .newReleaseBooks{
+        top:-100rem;
+        padding-top: 0px;
+    }
+
+
+    .book{
+        float: left;
+        width: 16.667%;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .newReleaseBooks::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .newReleaseBooks .book h2 {
+        font-size:20px;
+    }
+    .newReleaseBooks h3 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .newReleaseBooks button {
+        margin-top: 20px;
+        border-radius: 50px;
+        width: 100px;
+        padding: -1px;
+        color: #000000;
+        background-color: #D0D0D0;
+        border: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .newReleaseBooks img {
+        border-radius: 20px;
+        width: 102px;
+        height: 151px;
+    }
+    .newReleaseBooks p {
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+    }
+
+     /******************* rightsidebar****************************/
+     .bottomRightSidebar {
+        background-color: #bebab0;
+        height: 60%;
+        width: 20%;
+        float: right;
+        right: 0;
+        position: relative;
+        bottom: -13.6em;
+        margin-left: 1900px;
+        margin-top: 00px;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40px;
+    }
+    .bottomRightSidebar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        align-items: center;
+        margin-left: 60px;
+    }
+    .bottomRightSidebar h2 {
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        text-align: center;
+        
+        position: relative;
+    }
+    .bottomRightSidebar tr {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        justify-content: 0px;
+        align-items: center;
+        background-color: blue;
+        height: 33%;
+        position: relative;
+        bottom: -12rem;
+        left: 0.05rem;
+
+        
+
+    }
+    .horizontal-scroll{
+        width: 107rem;
+        height: 380px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        top: -24px;
+    }
+    .horizontal-scroll .btn-scroll{
+        background-color: #fff;
+        color: #999;
+        box-shadow:0 0 10px #999 ;
+        padding: 5px 8px;
+        border: 5px;
+        border-radius: 50%;
+        margin: 0 5px;
+        z-index: 1;
+        cursor: pointer ;
+        transition: 1s;
+        opacity: 100%;
+        border-color: black;
+    }
+    .storys-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        transition:0.5s all ease-out;
+    }
+    .story-circle{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .colorb1{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 3rem;
+    }
+    .wordsb1{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg1{
+        width: 50rem;
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }
+    /*book2*/
+    .colorb2{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 25rem;
+    }
+    .story-circle1{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle1 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb2{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg2{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book3*/
+    .colorb3{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 47rem;
+    }
+    .story-circle2{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle2 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb3{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg3{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book4*/
+    .colorb4{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 69rem;
+    }
+    .story-circle3{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle3 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb4{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg4{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book5*/
+    .colorb5{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 91rem;
+    }
+    .story-circle4{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle4 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb5{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg5{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book6*/
+    .colorb6{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 113rem;
+    }
+    .story-circle5{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle5 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb6{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg6{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book7*/
+    .colorb7{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 135rem;
+    }
+    .story-circle6{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle6 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb7{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg7{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book8*/
+    .colorb8{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 157rem;
+    }
+    .story-circle7{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle7 img{
+        width:5rem;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb8{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg8{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book9*/
+    .colorb9{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 179rem;
+    }
+    .story-circle8{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle8 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb9{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg9{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+    /*book10*/
+    .colorb10{
+        position: absolute;
+        background-color: red;
+        height:10rem;
+        width: 20rem;
+        border-radius: 40px;
+        left: 201rem;
+    }
+    .story-circle9{
+        width: 60px;
+        height: 60px;
+        margin: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        margin-right: 20rem;
+    }
+    .story-circle9 img{
+        width: 53px;
+        height: 10rem;
+        border-radius: 40px;
+       
+         
+    }
+    .wordsb10{
+        position: absolute;
+        width: 10rem;
+        left: 5rem;
+    }
+    .bookimg10{
+        position: absolute;
+        left: -4rem;
+        top: -4.5rem;
+    
+    }/*end*/
+
+
+    /*{
     padding: 0;
     margin: 0px;
     box-sizing: border-box;
 }
-/*.header-container{
+.header-container{
     background-color:lightgrey;
     width: 800px;
     height: 700px;
@@ -27,7 +715,7 @@
     position: absolute;
     top: 70px;
     left: 195px;
-}*/
+
 #heading-el{
     position: absolute;
     top: 50px;
@@ -75,7 +763,7 @@
     top: 100px;
     border-top-left-radius: 20px;
     z-index: 1;
-}*/
+}
 #sarah-el{
     width: 60px;
     height: 60px;
@@ -118,3 +806,11 @@
         margin-right: 5%;
         margin-top: 1%;
     }
+}*/
+
+
+
+
+/**********************************************************************************/
+
+    

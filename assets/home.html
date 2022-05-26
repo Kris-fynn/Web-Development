@@ -3,28 +3,345 @@
     <head>
         <title>protfolio website</title>
         <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
-    <body>
-        <div class="header-container">
-            <div class="main-container">
-                <div id="profile-picture">
-                    <img src="http://logok.org/wp-content/uploads/2015/01/Amazon-logo-880x660.png" alt="amazon logo not available" id="profileImage">
-                    <span><h1 id="heading-el"></h1><div id="mydot-el"></div></span>
+    <body onload="chaneTheImage()">
+    <!---Main Container--->
+    <div class="mainContainer"> 
+
+    <!-----------------Left Side Bar------------------->
+           <div class="leftSideBar"> 
+    <!-----------------Left Side Bar End---------------->
+
+    <!------------------Profile------------------------->
+    <div class="profile">
+        <div class="boxShadow">
+            <div class="profilePicture">
+            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqFQGpAt36fw5Pu55LWj3lSFrbUYLFzKw9ifnL9EsqB-4sAUZoLSUbXbSigwIPSKnUEQ&usqp=CAU" alt="" id="profilePicture">     
+           </div>
+             <div class="welcomeAndName">
+                 Welcome Back<br>
+                 <h2 id="name"> Sarah</h2>
+             </div>
+        </div>
+    </div>
+    <!------------------Profile end----------------------->
+
+
+    <!----------------left Side Bar Icon------------>
+    <div class="leftSideBarIcons">
+        <ul>
+            <div class=""><p><img src="../assets/img/myb_k.png"> My Kindle Board</p><div>
+            <div class=""><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUquRxHUc9MVPtEIu3gbVZRNGhAYOuGkEdceU-QOtBZ8BwR_JHSzx0qJmkwgqjNxYCReY&usqp=CAU">Collections</p></div>
+            <div class=""><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r-TKfJQyR5jLVOJXUsMc1T0LoZIIAUMETwYcGxLOZoQ0uk3ogV4ArDMkPTpYcF_LZxI&usqp=CAU">Saved</p></div>
+            <div class=""></p><img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg">Profile</p></div>
+            <div class=""><p><img src="https://cdn.icon-icons.com/icons2/2942/PNG/128/logout_icon_183923.png">Logout</p></div>
+        </ul>
+
+    
+<!----------------left Side Bar Icon end------------>
+
+
+    </div>
+    <!---------------Bottom Left Amazon Picture---->
+    <div class="bottomLeftAmazonPicture">
+        <img id="productAmazon" src="../assets/img/pdtofamzn.png">
+      </div>
+</div>    
+
+
+    <!---------------Bottom Left Amazon Picture end------->
+
+    <!---------------Right Side bar Main--------->
+    <div class="rightSidebarMain">
+    <!-----------Top Right Navigation Bar--------> 
+               <div id="topRightNavBar">
+                <div id="searchBar">
+                    <div style="width:20%;height:100%;float:left">
+                        <p style="font-weight: bold;">
+                            Kindle<em style="color: orange;font-size: large;">.</em>
+                        </p>
+                    </div>
+                    <div id="Search">
+                        <div style="width: 50%;height:100%;float:left;">
+                            <input type="text" placeholder="   Search your books">
+                            <button type="button"></button>
+                        </div>
+                        <div style="width: 50%;height:100%;float:right;">
+                            <ul style="list-style-type: none;margin:4px 0px 0px 10px; padding:0px;display:flex;align-items: center;">
+                                <li>New Release <em style="color: orange;font-size: large;padding:0px;">&bull;</em></li>
+                                <li>Featured</li>
+                                <li><img src=""></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div id="content-el">
-                    <div id="picture-el">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqFQGpAt36fw5Pu55LWj3lSFrbUYLFzKw9ifnL9EsqB-4sAUZoLSUbXbSigwIPSKnUEQ&usqp=CAU" alt="" id="sarah-el">
-                        <span><h1 id="heading2-el">Kindle</h1><div id="mydot1-el"></div></span>
-                        <input type="text" id="search-el" placeholder="Search your book">
-                        <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="" id="searchicon-el">
+            </div>
+        
+    <!------------Books you read last--->
+   <div class="booksYouReadlast"><h2>Books you read last</h2> 
+    <!------ Books scroller-->
+    <div class="container">
+        <div class="horizontal-scroll">
+            <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn-scroll" id="btn-scroll-right"  onclick="scrollHorizontally(-1)"><i class="fas fa-chevron-right"></i></button>
+            <div class="storys-container">
+                <div class="story-circle">
+                    <div class="colorb1">
+                        <div class="wordsb1">
+                           <font size="-1" ><h4>
+                                <h4>The nenotechology</h4>
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg1"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3zJyLVxNYi44zW5C4l75V7-bLoHjN6FcYrCqa49A13oursQ3z"></div>
+                        </div>
                         
                     </div>
-                    <p id="release-el">New Release</p>
-                    <p id="featur-el">Featured</p>
                 </div>
-                <div id="contentBackground-el"></div>
+                <div class="story-circle1">
+                    <div class="colorb2">
+                        <div class="wordsb2">
+                           <font size="-1" ><h4>
+                                The Fifth innovation
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg2"><img src="https://images-na.ssl-images-amazon.com/images/I/51SL9IaxbdL._SX355_BO1,204,203,200_.jpg"></div>
                         </div>
+                    </div>
+                </div>
+                <div class="story-circle2">
+                    <div class="colorb3">
+                        <div class="wordsb3">
+                           <font size="-1" ><h4>
+                               Leading In 21st Century 
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg3"><img src="https://media.loot.co.za/static/gallery/x/g/b/xgby-7101-g480/xgby-7101-g480.0.jpg?w=400&h=500&t=embed"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-circle3">
+                    <div class="colorb4">
+                        <div class="wordsb4">
+                           <font size="-1" ><h4>
+                                Social and Industrial Reform 
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg4"><img src="https://media.loot.co.za/images/x400/73305178417179215.jpg?w=400&h=500&t=embed"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-circle4">
+                    <div class="colorb5">
+                        <div class="wordsb5">
+                           <font size="-1" ><h4>
+                               Betrayal
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg5"><img src="https://media.loot.co.za/static/gallery/z/g/r/zgrj-6181-g950/zgrj-6181-g950.0.photo.062408387X.jpg?w=400&h=500&t=embed"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-circle5">
+                    <div class="colorb6">
+                        <div class="wordsb6">
+                           <font size="-1" ><h4>
+                                The Industrial Revolution
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg6"><img src="https://media.takealot.com/covers_isbn/9789381182284-zoom.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-circle6">
+                    <div class="colorb7">
+                        <div class="wordsb7">
+                           <font size="-1" ><h4>
+                                Urban Modernity
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg7"><img src="https://images-na.ssl-images-amazon.com/images/I/41qK8DO8IdL._SX336_BO1,204,203,200_.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-circle7">
+                    <div class="colorb8">
+                        <div class="wordsb8">
+                           <font size="-1" ><h4>
+                            Winning The Digital Gamble
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg8"><img src="https://images-na.ssl-images-amazon.com/images/I/41jOVBRajmL._SX311_BO1,204,203,200_.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-circle8">
+                    <div class="colorb9">
+                        <div class="wordsb9">
+                           <font size="-1" ><h4>
+                                3D Apple Games
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg9"><img src="https://m.media-amazon.com/images/I/515vz-4-LtL._AC_SY780_.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-circle9">
+                    <div class="colorb10">
+                        <div class="wordsb10">
+                           <font size="-1" ><h4>
+                                Video Gaming Career
+                            </h4>
+                            <p>101 pages.chapter12.Last read</p>
+                            </font>
+                            <div class="bookimg10"><img src="https://www.gameindustrycareerguide.com/wp-content/uploads/2017/07/start-your-video-game-career-book-small.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div
+           </div>
+   </div>
     
+    <!------------Books you read last--->
+        <div class="newRelease">
+            <h2>New Release</h2>
+            <div class="newReleaseBooks" >
+        
+                <!---------book1------------------->
+                <div class="book" id>
+                    <img id="bookImage" class="bookImg" src="https://images.routledge.com/common/jackets/crclarge/978103200/9781032002606.jpg">
+                    <h2>Deep Fakes</h2>
+                    <h3>Micheal Filimowicz</h3>
+                    <button>Science and Technology</button>
+                </div>
+                
+                
+                <!--- book2------------------->
+                <div class="book">
+                    <img id="bookImage" src="https://m.media-amazon.com/images/I/41osozhq8AL._SL500_.jpg">
+                    <h2>Neural</h2>
+                    <h3>Danild P. Manndic</h3>
+                    <button>Science and Technology</button>
+                </div>
+                
+                <!--- book3------------------->
+                <div class="book">
+                        <img id="bookImage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1409603984l/16796747.jpg">
+                        <h2>Issues</h2>
+                        <h3>Bernd Carsten Stahl</h3>
+                        <button>Science and Technology</button>
+                </div>
+                        
+                        <!--- book4------------------->
+                        <div class="book">
+                            <img id="bookImage" src="https://s3-eu-west-1.amazonaws.com/bookmallza/app/public/spree/products/1724474/product/9789814295253.jpg?1622025520">
+                            <h2>Locating</h2>
+                            <h3> Eric L Jones</h3>
+                            <button>Science and Technology</button>
+                    </div>
+        
+                 <!--- book5------------------->
+                <div class="book">
+                    <img id="bookImage"src="https://m.media-amazon.com/images/I/41xowcRDX9L._SL500_.jpg">
+                    <h2>Probabilistic</h2>
+                    <h3>Kevin P. Murphy</h3>
+                    <button>Science and Technology</button>
+                </div>    
+        
+            </div>
+        </div>
+
+
+
+    </div>                
+    <!------------New Release2 end--------------->
+    <!------------Bottom Right Sidebar-->
+                 <div class="bottomRightSidebar">
+                    <h2>Famous Authors</h2>
+                    <table cellpadding="10" cellspacing="15px">
+                        <tr colspan="2">
+                            <td>
+                                <img src="https://www.biography.com/.image/t_share/MTc5OTUwMTA3MzE4Mjk3OTQ0/gettyimages-1061157246.jpg">
+                            </td>
+                            <td style="padding-left:30px;">
+                                <h3>J.K. Rowling</h3>
+                                <p>10 Books</p>
+                            </td>
+                        </tr>
+                        <tr colspan="2">
+                            <td>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP9Qb9WBnIjUPFc2nf2XwDG8c3WxApyrjYIrfmM8wrbmOKT4poYwe3JRffu233ksZm88g&usqp=CAU">
+                            </td>
+                            <td style="padding-left:30px;">
+                                <h3>Stephan King</h3>
+                                <p>61 Novels</p>
+                            </td>
+                        </tr>
+                        <tr colspan="2">
+                            <td>
+                                <img src="https://daniellesteel.com/files/2013/01/DS_photo_RGB_72.jpeg">
+                            </td>
+                            <td style="padding-left:30px;">
+                                <h3>Danielle Steel</h3>
+                                <p>179 Books</p>
+                            </td>
+                        </tr>
+                    </table>
+                
+                
+        
+                </div>
+           
+
+    <!---Main Container end--->
+        </div> 
+    <script>
+            let currentScrollPosition = 0;
+             let scrollAmount = 400;
+             const  sCont = document.querySelector(".storys-container");
+             const hScroll = document.querySelector(".horizontal-scroll");
+             const btnScrollLeft = document.querySelector("#btn-scroll-left");
+             const btnScrollRight = document.querySelector("#btn-scroll-right");
+         
+            
+             let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
+              function scrollHorizontally(val){
+                  currentScrollPosition += (val * scrollAmount);
+                  sCont.style.left = currentScrollPosition + "px";
+                  if(currentScrollPosition >= 0){
+                       currentScrollPosition = 0
+                       
+                  }
+                  
+                  if(currentScrollPosition <= maxScroll){
+                      currentScrollPosition = maxScroll;
+                     
+                  }
+                  
+                  sCont.style.left=currentScrollPosition + "px"; 
+              }
+              function chaneTheImage(){
+        const img=document.getElementById("profilePicture");
+        img.src=sessionStorage.getItem("imgs");
+        document.getElementById("name").innerText = sessionStorage.getItem("fname");
+    }
+    </script>
+                
     </body>
 </html>
