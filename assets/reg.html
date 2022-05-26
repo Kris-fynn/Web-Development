@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- === Coding by Kris Fynn === -->
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./reg.css">
+  
+    <!--<title>Login & Registration Form</title>-->
+</head>
+<body>
+<!-- Registration Form -->
+<div class="container">
+    
+</div>
+<div class="form signup">
+    <center><span><img src="https://th.bing.com/th/id/OIP.q1VWSjaOO7pkiBAM1Cdk6AHaEK?pid=ImgDet&rs=1" alt="amazon logo not available" id="profileImage"></span><br></center><span><img src="https://th.bing.com/th/id/OIP.q1VWSjaOO7pkiBAM1Cdk6AHaEK?pid=ImgDet&rs=1" alt="amazon logo not available" id="profileImage"></span><br>
+    <span class="title">Registration</span>
+
+    <form action="./index.html">
+        <div class="input-field">
+            <input type="text" placeholder="Enter your Name and Surname" required id="fname">
+            <i class="uil uil-user"></i>
+        </div>
+        <div class="input-field">
+            <input type="text" id="umail" placeholder="Enter your Email" size="50" onblur="ValidateEmail()" required >
+            <i class="uil uil-envelope icon"></i>
+            
+        </div>
+        <div class="input-field">
+            <input type="text" id="cnumber" placeholder="Enter your Phone Number" required >
+            <i class="uil uil-envelope icon"></i>
+        </div>
+        <div class="form-control">
+            <label class="header">Profile Photo:</label>
+            
+            <input type="file" id="imgs" placeholder="Photo" >
+        </div>
+        <div class="input-field">
+            <input type="password" id="pass1" placeholder="Create a password" required >
+            <i class="uil uil-lock icon"></i>
+        </div>
+        <div class="input-field">
+            <input type="password" id="pass2" placeholder="Confirm a password"  required >
+            <i class="uil uil-lock icon"></i>
+            <i class="uil uil-eye-slash showHidePw"></i>
+        </div>
+
+        <div class="checkbox-text">
+            <div class="checkbox-content">
+                <input type="checkbox" id="sigCheck">
+                <label for="sigCheck" class="text">Remember me</label>
+            </div>
+            
+            <a href="./frgpwd.html" class="text">Forgot password?</a>
+        </div>
+
+        <div class="input-field button">
+            <button class="btn" onclick="FuntionRegister()">SignUp</button>
+        </div>
+        
+    </form>
+
+   <!---<div class="login-signup">
+        <span class="text">Not a member?
+            <a href="./index.html" class="text login-link">Signup now</a>
+        </span>
+    </div>--->
+</div>
+</div>
+   <!--<script src="script.js"></script>-->
+   <script src="index.js"></script>
+   <script src="reg.js"></script>
+  
+
+</body>
+</html>

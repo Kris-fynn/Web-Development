@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- === Coding by Kris Fynn === -->
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./index.css">
+    
+    <!--<title>Login Form</title>-->
+</head>
+<body>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span><img src="https://th.bing.com/th/id/OIP.q1VWSjaOO7pkiBAM1Cdk6AHaEK?pid=ImgDet&rs=1" alt="amazon logo not available" id="profileImage"></span><br>
+                <span class="title">Login</span>
+
+                <form action="./assets/home.html">
+                    <div class="input-field">
+                        <input type="text" id="umail" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="pass1" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+        
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        
+                        <a href="./frgpwd.html" class="text">Forgot password?</a>
+                    </div>
+                
+                    <div class="input-field button">
+                        <button class="btn" onclick="loginn()">Log in</button>
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="./reg.html" class="text signup-link">Signup now</a>
+                    </span>
+                </div>
+            </div>
+    </div>
+
+    <!--<script src="script.js"></script>-->
+    <script src="index.js"></script>
+    <script src="reg.js"></script>
+   
+
+</body>
+</html>

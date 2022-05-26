@@ -10,7 +10,7 @@
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     </head>
-    <body onload="chaneTheImage()">
+    <body onload="changeTheImage()">
     <!---Main Container--->
     <div class="mainContainer"> 
 
@@ -22,7 +22,7 @@
     <div class="profile">
         <div class="boxShadow">
             <div class="profilePicture">
-            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqFQGpAt36fw5Pu55LWj3lSFrbUYLFzKw9ifnL9EsqB-4sAUZoLSUbXbSigwIPSKnUEQ&usqp=CAU" alt="" id="profilePicture">     
+            <img   alt="" id="profilePicture">     
            </div>
              <div class="welcomeAndName">
                  Welcome Back<br>
@@ -36,11 +36,11 @@
     <!----------------left Side Bar Icon------------>
     <div class="leftSideBarIcons">
         <ul>
-            <div class=""><p><img src="../assets/img/myb_k.png"> My Kindle Board</p><div>
-            <div class=""><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUquRxHUc9MVPtEIu3gbVZRNGhAYOuGkEdceU-QOtBZ8BwR_JHSzx0qJmkwgqjNxYCReY&usqp=CAU">Collections</p></div>
-            <div class=""><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r-TKfJQyR5jLVOJXUsMc1T0LoZIIAUMETwYcGxLOZoQ0uk3ogV4ArDMkPTpYcF_LZxI&usqp=CAU">Saved</p></div>
-            <div class=""></p><img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg">Profile</p></div>
-            <div class=""><p><img src="https://cdn.icon-icons.com/icons2/2942/PNG/128/logout_icon_183923.png">Logout</p></div>
+            <div class=""><p><a href="../collections/collaction.html"><p><img src="../assets/img/myb_k.png"> My Kindle Board</p></a><div>
+            <div class=""><p><a href="../collections/collaction.html"><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUquRxHUc9MVPtEIu3gbVZRNGhAYOuGkEdceU-QOtBZ8BwR_JHSzx0qJmkwgqjNxYCReY&usqp=CAU">Collections</p></a></div>
+            <div class=""><a href="../collections/collaction.html"><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r-TKfJQyR5jLVOJXUsMc1T0LoZIIAUMETwYcGxLOZoQ0uk3ogV4ArDMkPTpYcF_LZxI&usqp=CAU">Saved</p></a></div>
+            <div class=""><a href="../collections/collaction.html"><p><img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small/profile-icon-design-free-vector.jpg">Profile</p></a</div>
+            <div class=""><a href="../index.html"><p><img src="https://cdn.icon-icons.com/icons2/2942/PNG/128/logout_icon_183923.png">Logout</p></a></div>
         </ul>
 
     
@@ -336,7 +336,7 @@
                   
                   sCont.style.left=currentScrollPosition + "px"; 
               }
-              function chaneTheImage(){
+              function changeTheImage(){
         const img=document.getElementById("profilePicture");
         img.src=sessionStorage.getItem("imgs");
         document.getElementById("name").innerText = sessionStorage.getItem("fname");
