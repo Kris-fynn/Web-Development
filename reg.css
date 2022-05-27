@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    background: #fff;
+    
+    
 }
 
 body{

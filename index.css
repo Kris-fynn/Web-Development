@@ -28,8 +28,6 @@ body{
     float :top;
 }
 
-
-
 .container{
     position: relative;
     max-width: 450px;
@@ -59,7 +57,7 @@ body{
     height: absolute;
 }
 
-.container.active .login{
+.container.active .signup{
     margin-left: -50%;
     opacity: 0;
     transition: margin-left 0.18s ease, opacity 0.15s ease;
